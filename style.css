@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /**---Primary---*/
+  --Strong-cyan: hsl(172, 67%, 45%);
+
+  /**---Neutral---*/
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--Light-grayish-cyan);
+}
+
+/*?-------------------main------------------------*/
+h3 {
+  color: var(--Dark-grayish-cyan);
+  letter-spacing: 0.5em;
+  padding: 1em;
+}
+
+h3,
+.container {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vw;
+  margin: auto;
+  background-color: var(--White);
+  border-radius: 1em;
+  padding: 2em;
+  margin-bottom: 3em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+
+}
+label {
+  color: var(--Dark-grayish-cyan);
+  text-align: left;
+}
+
+input {
+  padding: 0.5em;
+  background-color: var(--Very-light-grayish-cyan);
+  color:var(--Very-dark-cyan);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+}
+
+input::placeholder {
+  text-align: right;
+  color: var(--Grayish-cyan)
+}
+
+input:focus {
+  outline: var(--Strong-cyan) 2px solid;
+  text-align: right;
+}
+
+.invalid{
+  outline: red 1px solid;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  padding: .5em;
+}
+
+.custom,
+button{
+  padding: .5em 1.5em;
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  min-width: 25vw;
+  text-align: center;
+}
+
+button{
+  color: var(--White);
+  background-color: var(--Very-dark-cyan);
+}
+
+button:hover{
+  background-color: var(--Strong-cyan);
+}
+
+.active-btn{
+  background-color: var(--Strong-cyan);
+}
+
+.custom{
+  background-color: var(--Very-light-grayish-cyan);
+}
+
+.custom::placeholder{
+    color: var(--Dark-grayish-cyan)
+}
+
+.custom:focus{
+  outline: var(--Strong-cyan) 1px solid;
+}
+
+.main-tip{
+  background-color: var(--Very-dark-cyan);
+  border-radius: 10px;
+  margin: 2em 0 0 0;
+  min-width: 50vw;
+}
+
+.tip-container{
+  padding: 1em 1em 4em 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6em;
+  min-width: 50vw;
+}
+
+p{
+  color:var(--White);
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: -5em;
+}
+
+span{
+  font-size: 11px;
+  color:var(--Grayish-cyan)
+}
+
+.ammount{
+  color: var(--Strong-cyan);
+  font-size: 24px;
+}
+
+.reset{
+  background-color:var(--Strong-cyan);
+  min-width: 85%;
+  margin: 1em ;
+}
+
+
+@media (min-width:786px) {
+.container{
+  flex-direction: row;
+  max-width: 80vw;
+  margin: auto;
+  gap: 1em;
+  overflow: hidden;
+  padding-top: 0;
+  margin-bottom: 4em;
+}
+
+input{
+  max-width: 45vw;
+}
+
+.custom,
+button{
+  min-width: 10vw;
+}
+
+.main-tip{
+  min-width: 20vw;
+  min-height: 60vh;
+}
+
+.tip-container{
+  padding-bottom: 12em;
+}
+
+}
+
+/*?-------------------main------------------------*/
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
